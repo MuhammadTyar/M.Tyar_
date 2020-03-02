@@ -1,0 +1,26 @@
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col md-6">
+                <div class="card">
+                    <h3>Detail Data Guru</h3>
+                    <div class="card-body">
+                        <img class="img-profile rounded-circle" width="20%" height="20%" style="display: block; margin: auto;" src="<?= base_url('assets/img/profile/') . $user['image']; ?>">
+                        <br>
+                        <div class="container">
+                            <div class="md-3 text-center">
+                                <a class="btn btn-secondary active center">Kode Guru : <?= $user['kodeguru']; ?></a>
+                            </div>
+                        </div>
+                        <br>
+                        <h5 class="card-text text-center">role : <?= $user['role_id']; ?></h5>
+                        <h5 class="card-text text-center">Nama : <?= $user['name']; ?></h5>
+                        <h5 class="card-text text-center">Email : <?= $user['email']; ?></h5>
+                        <h5 class="card-text text-center">Jurusan : <?= $user['jurusan']; ?></h5>
+                        <p class="card-text text-center"><small class="text-muted">Member since <?= date('d F Y', $user['date_create']); ?></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
